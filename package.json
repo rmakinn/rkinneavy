@@ -1,0 +1,24 @@
+{
+  "name": "rkinneavy",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {
+    "atomic-algolia": "^0.3.17"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "algolia": "atomic-algolia"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rmakinn/rkinneavy.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/rmakinn/rkinneavy/issues"
+  },
+  "homepage": "https://github.com/rmakinn/rkinneavy#readme"
+}

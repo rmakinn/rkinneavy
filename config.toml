@@ -2,3 +2,16 @@ baseURL = "http://www.rkinneavy.com/"
 languageCode = "en-GB"
 title = "Rowan's Place"
 theme = "blank"
+
+[outputs]
+home = ["HTML", "RSS", "Algolia"]
+
+[outputFormats.Algolia]
+baseName = "algolia"
+isPlainText = true
+mediaType = "application/json"
+notAlternative = true
+
+[params.algolia]
+vars = ["title", "summary", "date", "publishdate", "expirydate", "permalink"]
+params = ["categories", "tags"]
