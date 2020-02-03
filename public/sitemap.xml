@@ -3,10 +3,6 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>http://www.rkinneavy.com/docs/linux/bash/</loc>
-  </url>
-  
-  <url>
     <loc>http://www.rkinneavy.com/docs/databases/</loc>
   </url>
   
@@ -23,13 +19,20 @@
   </url>
   
   <url>
-    <loc>http://www.rkinneavy.com/docs/linux/setup/</loc>
+    <loc>http://www.rkinneavy.com/docs/linux/setup/home/</loc>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>http://www.rkinneavy.com/docs/linux/setup/home/</loc>
-    <priority>0</priority>
+    <loc>http://www.rkinneavy.com/docs/linux/bash/aliases/</loc>
+  </url>
+  
+  <url>
+    <loc>http://www.rkinneavy.com/docs/linux/bash/</loc>
+  </url>
+  
+  <url>
+    <loc>http://www.rkinneavy.com/docs/linux/bash/shellrc/</loc>
   </url>
   
   <url>
@@ -37,11 +40,47 @@
   </url>
   
   <url>
+    <loc>http://www.rkinneavy.com/tags/cube/</loc>
+  </url>
+  
+  <url>
     <loc>http://www.rkinneavy.com/docs/</loc>
   </url>
   
   <url>
+    <loc>http://www.rkinneavy.com/docs/linux/setup/dotfiles/</loc>
+  </url>
+  
+  <url>
+    <loc>http://www.rkinneavy.com/tags/dots/</loc>
+  </url>
+  
+  <url>
+    <loc>http://www.rkinneavy.com/docs/linux/bash/functions/</loc>
+  </url>
+  
+  <url>
     <loc>http://www.rkinneavy.com/</loc>
+  </url>
+  
+  <url>
+    <loc>http://www.rkinneavy.com/tags/improve/</loc>
+  </url>
+  
+  <url>
+    <loc>http://www.rkinneavy.com/docs/cheatsheets/</loc>
+  </url>
+  
+  <url>
+    <loc>http://www.rkinneavy.com/docs/linux/bash/scripts/</loc>
+  </url>
+  
+  <url>
+    <loc>http://www.rkinneavy.com/docs/linux/setup/</loc>
+  </url>
+  
+  <url>
+    <loc>http://www.rkinneavy.com/tags/stub/</loc>
   </url>
   
   <url>

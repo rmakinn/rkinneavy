@@ -5,8 +5,8 @@
   <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="description" content="Home"><meta property="og:title" content="" />
-<meta property="og:description" content="There&#39;s no place like $HOME Below I describe my home folder layout and why I do things the way I do, maybe (or maybe not) you&#39;ll get something out of it. It&#39;s a little excessive, perhaps, but I enjoy it.
-. ├── archive # old files by creation year, maybe useful again ├── 2019 └── 2019-01-01_file.txt # ISO-8601 date format is king, fight me └── 2020 | ├── backups # I use restic (and timeshift, but not in this dir) | ├── inbox # where all my unsorted downloads begin | ├── library # actually a symlink to my Dropbox folder on a secondary HDD | # ^^ sorted downloads end up here ├── art ├── books ├── {DDS/LoC} # classification schema └── shelf # currently reading or soon-to-read ├── music ├── photos ├── scrots # aka screenshots ├── videos └── walls # aka wallpapers | ├── org # life admin: CVs, bank statements etc | ├── projects # code, websites etc | └── wiki # a bunch of interlinked markdown files, once managed by vimwiki └── diary # I&#39;ve since moved to Joplin as it&#39;s became really awesome in 2019." />
+<meta property="og:description" content="There&#39;s no place like $HOME~ Below I describe my home folder layout and why I do things the way I do, perhaps you&#39;ll get something out of it. It&#39;s a little excessive, I know, but what can you do? 🤷‍♂
+ . ├── archive # old files by creation year, maybe useful again ├── 2019 └── 2019-01-01_file.txt # ISO-8601 date format is king, fight me └── 2020 | ├── backups # I use restic (and timeshift, but not in this dir) | ├── inbox # where all my unsorted downloads begin | ├── library # actually a symlink to my Dropbox folder on a secondary HDD | # ^^ sorted downloads end up here ├── art ├── books ├── {DDS/LoC} # classification schema └── shelf # currently reading or soon-to-read ├── music ├── photos ├── scrots # aka screenshots ├── videos └── walls # aka wallpapers | ├── org # life admin: CVs, bank statements etc | ├── projects # code, websites etc | └── wiki # a bunch of interlinked markdown files, once managed by vimwiki └── diary # I&#39;ve since moved to Joplin as it&#39;s became really awesome in 2019." />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="http://www.rkinneavy.com/docs/linux/setup/home/" />
 
@@ -136,6 +136,46 @@ https://github.com/alex-shpak/hugo-book
   
   <ul>
     
+      
+        <li>
+
+  <a href="/docs/linux/bash/aliases/" >
+      Aliases
+  </a>
+
+</li>
+      
+    
+      
+        <li>
+
+  <a href="/docs/linux/bash/shellrc/" >
+      Bashrc
+  </a>
+
+</li>
+      
+    
+      
+        <li>
+
+  <a href="/docs/linux/bash/functions/" >
+      Functions
+  </a>
+
+</li>
+      
+    
+      
+        <li>
+
+  <a href="/docs/linux/bash/scripts/" >
+      Scripts
+  </a>
+
+</li>
+      
+    
   </ul>
   
 
@@ -151,7 +191,13 @@ https://github.com/alex-shpak/hugo-book
 
   <li >
     
-      <span>Setup</span>
+      
+
+  <a href="/docs/linux/setup/" >
+      Setup
+  </a>
+
+
     
 
     
@@ -167,6 +213,16 @@ https://github.com/alex-shpak/hugo-book
 
   <a href="/docs/linux/setup/home/"  class="active">
       Home
+  </a>
+
+</li>
+      
+    
+      
+        <li>
+
+  <a href="/docs/linux/setup/dotfiles/" >
+      Dotfiles
   </a>
 
 </li>
@@ -217,6 +273,38 @@ https://github.com/alex-shpak/hugo-book
 
 </li>
       
+    
+  </ul>
+  
+
+
+
+  </li>
+
+
+      
+    
+      
+        
+
+  <li >
+    
+      
+
+  <a href="/docs/cheatsheets/" >
+      Quickref
+  </a>
+
+
+    
+
+    
+
+
+
+
+  
+  <ul>
     
   </ul>
   
@@ -309,8 +397,9 @@ https://github.com/alex-shpak/hugo-book
       </header>
 
       
-<article class="markdown"><h1 id="theres-no-place-like-home">There's no place like $HOME</h1>
-<p>Below I describe my home folder layout and why I do things the way I do, maybe (or maybe not) you'll get something out of it. It's a little excessive, perhaps, but I enjoy it.</p>
+<article class="markdown"><h1 id="theres-no-place-like-home"><em>There's no place like $HOME~</em></h1>
+<p>Below I describe my home folder layout and why I do things the way I do, perhaps you'll get something out of it. It's a little excessive, I know, but what can you do? 🤷‍♂</p>
+<hr>
 <pre><code>.
 ├── archive        # old files by creation year, maybe useful again
     ├── 2019       
@@ -349,14 +438,15 @@ https://github.com/alex-shpak/hugo-book
 <p>Old or stale stuff goes here. Could be code projects, old documents from Uni or previous workplaces, abandoned tutorials, whatever. I'm loathe to delete things, and this is how I manage it!</p>
 <h3 id="backups"><code>backups/</code></h3>
 <p>This directory is also symlinked over to my 2nd HDD.</p>
-<p>I use <a href="https://restic.net/">restic</a>, which genuinely does do backup right. Highly recommended, easy to schedule with a tool like <code>cron</code> - I use <a href="https://github.com/leahneukirchen/snooze"><code>snooze</code></a> .</p>
+<p>I use <a href="https://restic.net/">restic</a>, which genuinely does do backup right. Highly recommended, easy to schedule with a tool like <code>cron</code> or <a href="https://github.com/leahneukirchen/snooze"><code>snooze</code></a> .</p>
 <p>I target folders like <code>~/projects</code> - it’s not in my Dropbox because, IIRC, Dropbox can run into trouble with symlinks in a certain direction, and with <code>git</code>. I use GitHub for all my projects anyway.</p>
 <h3 id="inbox"><code>inbox/</code></h3>
 <p>Self-explanatory - browser, website archiving or media downloads, Github checkouts etc.</p>
-<p>I set up a script to give me notifications to clean it up on Monday and Friday evenings.</p>
+<p>I set up a script (TODO: link) to give me notifications to clean it up on Monday and Friday evenings.</p>
 <p>Currently Firefox can only save to a single folder, or gets the user to select one every time. Someday I'll write a script I can get Firefox to call that matches download filetypes to specific locations.</p>
 <h3 id="library"><code>library/</code></h3>
-<p>As I mentioned this is just a symlink to a directory with that name on a secondary HDD mounted at <code>/media/data/Dropbox</code> - I have the same-sized SSD and HDD in both my computer and my laptop, so I don't have to think much about selective downloads with Dropbox. One day I'll upgrade to 2TB drives to match my Dropbox capacity.</p>
+<p>As I mentioned this is just a symlink to a directory with that name on a secondary HDD mounted at <code>/media/data/Dropbox</code> - I have the same-sized SSD and HDD in both my computer and my laptop, and an identical setup, so I don't have to think much about selective downloads with Dropbox or messing much with configs. One day I'll upgrade to 2TB drives to match my Dropbox capacity.</p>
+<h4 id="books"><code>./books/</code></h4>
 <p>I'm a data hoarder, and have many, many gigabytes of PDFs, ebooks and documents (surely more than a lifetimes worth already). I use something like the Dewey Decimal System to organise my books sub-directory - it works pretty nicely most of the time, although it's by no means perfect.</p>
 <p>For my general reading shelf, I put symlinks to the actual file in the library, and I do the same when I have books or PDFs related to projects. Saves a lotta space.</p>
 <h3 id="org"><code>org/</code></h3>

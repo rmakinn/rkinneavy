@@ -2,22 +2,20 @@
 <html lang="en">
 
 <head>
-	<meta name="generator" content="Hugo 0.62.2" />
   <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="description" content="Home"><meta property="og:title" content="Home" />
-<meta property="og:description" content="" />
-<meta property="og:type" content="website" />
-<meta property="og:url" content="http://www.rkinneavy.com/" />
+<meta name="description" content="Dotfiles"><meta property="og:title" content="Dotfiles" />
+<meta property="og:description" content="management  git &ndash;bare repo method as detailed in atlassian tutorial and similar  although I have a clever &lsquo;dots&rsquo; alias   I tried yadm, stow etc but they never really clicked, needed to do it this way to grok it  I don&#39;t want to put a file in the git repo and then symlink it out. I want the file to be in the right place, and simply track it by adding it to the bare git repo." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="http://www.rkinneavy.com/docs/linux/setup/dotfiles/" />
 
-<title>Home | Rowan&#39;s Place</title>
+<title>Dotfiles | Rowan&#39;s Place</title>
 <link rel="icon" href="/favicon.png" type="image/x-icon">
 
 
 <link rel="stylesheet" href="/book.min.0ebcddff02b1e1747a812a92c33b5507c33543549bf844f2bc67cae12d2e5456.css" integrity="sha256-Drzd/wKx4XR6gSqSwztVB8M1Q1Sb&#43;ETyvGfK4S0uVFY=">
 
 
-<link rel="alternate" type="application/rss+xml" href="http://www.rkinneavy.com/index.xml" title="Rowan's Place" />
 <!--
 Made with Book Theme
 https://github.com/alex-shpak/hugo-book
@@ -222,7 +220,7 @@ https://github.com/alex-shpak/hugo-book
       
         <li>
 
-  <a href="/docs/linux/setup/dotfiles/" >
+  <a href="/docs/linux/setup/dotfiles/"  class="active">
       Dotfiles
   </a>
 
@@ -358,7 +356,7 @@ https://github.com/alex-shpak/hugo-book
     <img src="/svg/menu.svg" class="book-icon" alt="Menu" />
   </label>
 
-  <strong>Home</strong>
+  <strong>Dotfiles</strong>
 
   <label for="toc-control">
     <img src="/svg/toc.svg" class="book-icon" alt="Table of Contents" />
@@ -372,14 +370,8 @@ https://github.com/alex-shpak/hugo-book
       
   <nav id="TableOfContents">
   <ul>
-    <li><a href="#who">Who?</a></li>
-    <li><a href="#what">What?</a>
-      <ul>
-        <li><a href="#whats-here">What's here?</a></li>
-        <li><a href="#why-public">Why public?</a></li>
-      </ul>
-    </li>
-    <li><a href="#how">How?</a></li>
+    <li><a href="#management">management</a></li>
+    <li><a href="#organisation">organisation</a></li>
   </ul>
 </nav>
 
@@ -390,24 +382,27 @@ https://github.com/alex-shpak/hugo-book
       </header>
 
       
-<article class="markdown"><h1 id="welcome">Welcome!</h1>
-<p>&hellip; to my personal blog &amp; public knowledgebase.</p>
-<h2 id="who">Who?</h2>
-<p>I'm Rowan Kinneavy. I'm a big fan of all things programming, classical &amp; jazz guitar, solving Rubik's Cubes really fast, and plenty more.</p>
-<h2 id="what">What?</h2>
-<p>Public knowledgebases are pretty neat, I think, so I'm working on building this one out. I've thousands of notes on my computer. Though plenty of them say similar things or have duplicate ideas - hopefully some will say cool or useful things, and those are the ones <em>you'll</em> see, dear reader.</p>
-<h3 id="whats-here">What's here?</h3>
-<p>&lt;&mdash; See the sidebar</p>
-<p>In theory, it will eventually be populated with sections on all sorts of things, from documenting my Linux system, to topics in computer science, to philosophy, maths, poetry, rationality, phenomenology, nice recipes, metaphor&hellip; etc etc.</p>
-<h3 id="why-public">Why public?</h3>
-<p>The rationale is that publication of my notes serves a similar role to verbal expression, encouraging me to re-wrap things in less Rowan-specific language - clarifying and distilling the contents.</p>
-<p>It's also just quite nice to go over things and get a sense of how far you've come (and also how much you've forgotten, too).</p>
-<h2 id="how">How?</h2>
+<article class="markdown"><h2 id="management">management</h2>
 <ul>
-<li>It's written in Markdown and generated via Hugo.</li>
-<li>Go check out the source on my <a href="https://github.com/rmakinn/rkinneavy">GitHub</a>.</li>
-<li>The site is hosted courtesy of Netlify.</li>
-<li>I'm using a gently modified version of the <a href="https://github.com/alex-shpak/hugo-book">book</a> theme.</li>
+<li>git &ndash;bare repo method as detailed in atlassian tutorial and similar
+<ul>
+<li>although I have a clever &lsquo;dots&rsquo; alias</li>
+</ul>
+</li>
+<li>I tried yadm, stow etc but they never really clicked, needed to do it this way to grok it
+<ul>
+<li>I don't want to put a file in the git repo and then symlink it out. I want the file to be in the right place, and simply track it by adding it to the bare git repo.</li>
+</ul>
+</li>
+</ul>
+<h2 id="organisation">organisation</h2>
+<ul>
+<li>In general, if I can specify a location for a config file it's gonna get placed in <code>~/.config</code>
+<ul>
+<li>generally you have to do this with environmental variables, the worst case involves passing something like <code>-c /path/to/.config/dir</code> and aliasing that to the plain command.</li>
+</ul>
+</li>
+<li>I make good use of <code>~/.local</code> as this is where user-specific configuration and binaries ought to go, imo - put fonts, icons, themes in the share subdirectory, and scripts and AppImages etc in bin.</li>
 </ul>
 </article>
  
@@ -435,14 +430,8 @@ https://github.com/alex-shpak/hugo-book
       
   <nav id="TableOfContents">
   <ul>
-    <li><a href="#who">Who?</a></li>
-    <li><a href="#what">What?</a>
-      <ul>
-        <li><a href="#whats-here">What's here?</a></li>
-        <li><a href="#why-public">Why public?</a></li>
-      </ul>
-    </li>
-    <li><a href="#how">How?</a></li>
+    <li><a href="#management">management</a></li>
+    <li><a href="#organisation">organisation</a></li>
   </ul>
 </nav>
 

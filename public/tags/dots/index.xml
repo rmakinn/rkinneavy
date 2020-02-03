@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>dots on Rowan&#39;s Place</title>
+    <link>http://www.rkinneavy.com/tags/dots/</link>
+    <description>Recent content in dots on Rowan&#39;s Place</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-GB</language>
+    
+	<atom:link href="http://www.rkinneavy.com/tags/dots/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Dotfiles</title>
+      <link>http://www.rkinneavy.com/docs/linux/setup/dotfiles/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://www.rkinneavy.com/docs/linux/setup/dotfiles/</guid>
+      <description>management  git &amp;ndash;bare repo method as detailed in atlassian tutorial and similar  although I have a clever &amp;lsquo;dots&amp;rsquo; alias   I tried yadm, stow etc but they never really clicked, needed to do it this way to grok it  I don&#39;t want to put a file in the git repo and then symlink it out. I want the file to be in the right place, and simply track it by adding it to the bare git repo.</description>
+    </item>
+    
+  </channel>
+</rss>

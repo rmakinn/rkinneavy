@@ -1,0 +1,553 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Functions"><meta property="og:title" content="Functions" />
+<meta property="og:description" content="Bash Functions I really love bash functions. I scoured the web for awesome ones, and wrote a few of my own. Here are a few worthy of mention:
+TODO: explanatory comments
+Brain-assisters cheats() { cheat -l | sk --preview &#34;cheat {1}&#34; } explain () { if [ &#34;$#&#34; -eq 0 ]; then while read -p &#34;Command: &#34; cmd; do curl -Gs &#34;https://www.mankier.com/api/v2/explain/?cols=&#34;$(tput cols) --data-urlencode &#34;q=$cmd&#34; done echo &#34;Bye!&#34; elif [ &#34;$#&#34; -eq 1 ]; then curl -Gs &#34;https://www." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="http://www.rkinneavy.com/docs/linux/bash/functions/" />
+
+<title>Functions | Rowan&#39;s Place</title>
+<link rel="icon" href="/favicon.png" type="image/x-icon">
+
+
+<link rel="stylesheet" href="/book.min.0ebcddff02b1e1747a812a92c33b5507c33543549bf844f2bc67cae12d2e5456.css" integrity="sha256-Drzd/wKx4XR6gSqSwztVB8M1Q1Sb&#43;ETyvGfK4S0uVFY=">
+
+
+<!--
+Made with Book Theme
+https://github.com/alex-shpak/hugo-book
+-->
+
+  
+</head>
+
+<body>
+  <input type="checkbox" class="hidden" id="menu-control" />
+  <main class="container flex">
+    <aside class="book-menu">
+      
+  <nav>
+<h2 class="book-brand">
+  <a href="/"><span>Rowan&#39;s Place</span>
+  </a>
+</h2>
+
+
+
+
+
+
+  
+
+  
+  
+
+
+
+
+
+ 
+  
+    
+
+
+
+
+  
+  <ul>
+    
+      
+        
+
+  <li >
+    
+      
+
+  <a href="/docs/databases/" >
+      Databases
+  </a>
+
+
+    
+
+    
+
+
+
+
+  
+  <ul>
+    
+  </ul>
+  
+
+
+
+  </li>
+
+
+      
+    
+      
+        
+
+  <li >
+    
+      
+
+  <a href="/docs/linux/" >
+      Linux
+  </a>
+
+
+    
+
+    
+
+
+
+
+  
+  <ul>
+    
+      
+        
+
+  <li >
+    
+      
+
+  <a href="/docs/linux/bash/" >
+      Bash
+  </a>
+
+
+    
+
+    
+
+
+
+
+  
+  <ul>
+    
+      
+        <li>
+
+  <a href="/docs/linux/bash/aliases/" >
+      Aliases
+  </a>
+
+</li>
+      
+    
+      
+        <li>
+
+  <a href="/docs/linux/bash/shellrc/" >
+      Bashrc
+  </a>
+
+</li>
+      
+    
+      
+        <li>
+
+  <a href="/docs/linux/bash/functions/"  class="active">
+      Functions
+  </a>
+
+</li>
+      
+    
+      
+        <li>
+
+  <a href="/docs/linux/bash/scripts/" >
+      Scripts
+  </a>
+
+</li>
+      
+    
+  </ul>
+  
+
+
+
+  </li>
+
+
+      
+    
+      
+        
+
+  <li >
+    
+      
+
+  <a href="/docs/linux/setup/" >
+      Setup
+  </a>
+
+
+    
+
+    
+
+
+
+
+  
+  <ul>
+    
+      
+        <li>
+
+  <a href="/docs/linux/setup/home/" >
+      Home
+  </a>
+
+</li>
+      
+    
+      
+        <li>
+
+  <a href="/docs/linux/setup/dotfiles/" >
+      Dotfiles
+  </a>
+
+</li>
+      
+    
+  </ul>
+  
+
+
+
+  </li>
+
+
+      
+    
+  </ul>
+  
+
+
+
+  </li>
+
+
+      
+    
+      
+        
+
+  <li >
+    
+      <span>Cubing</span>
+    
+
+    
+
+
+
+
+  
+  <ul>
+    
+      
+        <li>
+
+  <a href="/docs/cubing/practice/" >
+      Practice
+  </a>
+
+</li>
+      
+    
+  </ul>
+  
+
+
+
+  </li>
+
+
+      
+    
+      
+        
+
+  <li >
+    
+      
+
+  <a href="/docs/cheatsheets/" >
+      Quickref
+  </a>
+
+
+    
+
+    
+
+
+
+
+  
+  <ul>
+    
+  </ul>
+  
+
+
+
+  </li>
+
+
+      
+    
+  </ul>
+  
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+</nav>
+
+
+<script>
+(function() {
+  var menu = document.querySelector("aside.book-menu nav");
+  addEventListener("beforeunload", function(event) {
+    localStorage.setItem("menu.scrollTop", menu.scrollTop);
+  });
+  menu.scrollTop = localStorage.getItem("menu.scrollTop");
+})();
+</script>
+
+ 
+    </aside>
+
+    <div class="book-page">
+      <header class="book-header">
+        
+  <div class="flex align-center justify-between">
+  <label for="menu-control">
+    <img src="/svg/menu.svg" class="book-icon" alt="Menu" />
+  </label>
+
+  <strong>Functions</strong>
+
+  <label for="toc-control">
+    <img src="/svg/toc.svg" class="book-icon" alt="Table of Contents" />
+  </label>
+</div>
+
+
+  
+    <input type="checkbox" class="hidden" id="toc-control" />
+    <aside class="hidden clearfix">
+      
+  <nav id="TableOfContents">
+  <ul>
+    <li><a href="#brain-assisters">Brain-assisters</a></li>
+    <li><a href="#fuzzy-finder">Fuzzy-finder</a></li>
+    <li><a href="#misc-utility">Misc Utility</a></li>
+  </ul>
+</nav>
+
+
+    </aside>
+  
+ 
+      </header>
+
+      
+<article class="markdown"><h1 id="bash-functions">Bash Functions</h1>
+<p>I really love bash functions. I scoured the web for awesome ones, and wrote a few of my own. Here are a few worthy of mention:</p>
+<p>TODO: explanatory comments</p>
+<h2 id="brain-assisters">Brain-assisters</h2>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">
+cheats<span style="color:#f92672">(</span><span style="color:#f92672">)</span> <span style="color:#f92672">{</span>
+    cheat -l | sk --preview <span style="color:#e6db74">&#34;cheat {1}&#34;</span>
+<span style="color:#f92672">}</span>
+
+explain <span style="color:#f92672">(</span><span style="color:#f92672">)</span> <span style="color:#f92672">{</span>
+    <span style="color:#66d9ef">if</span> <span style="color:#f92672">[</span> <span style="color:#e6db74">&#34;</span>$#<span style="color:#e6db74">&#34;</span> -eq <span style="color:#ae81ff">0</span> <span style="color:#f92672">]</span>; <span style="color:#66d9ef">then</span>
+      <span style="color:#66d9ef">while</span> read  -p <span style="color:#e6db74">&#34;Command: &#34;</span> cmd; <span style="color:#66d9ef">do</span>
+        curl -Gs <span style="color:#e6db74">&#34;https://www.mankier.com/api/v2/explain/?cols=&#34;</span><span style="color:#66d9ef">$(</span>tput cols<span style="color:#66d9ef">)</span> --data-urlencode <span style="color:#e6db74">&#34;</span><span style="color:#e6db74">q=</span>$cmd<span style="color:#e6db74">&#34;</span>
+      <span style="color:#66d9ef">done</span>
+      echo <span style="color:#e6db74">&#34;Bye!&#34;</span>
+    <span style="color:#66d9ef">elif</span> <span style="color:#f92672">[</span> <span style="color:#e6db74">&#34;</span>$#<span style="color:#e6db74">&#34;</span> -eq <span style="color:#ae81ff">1</span> <span style="color:#f92672">]</span>; <span style="color:#66d9ef">then</span>
+      curl -Gs <span style="color:#e6db74">&#34;https://www.mankier.com/api/v2/explain/?cols=&#34;</span><span style="color:#66d9ef">$(</span>tput cols<span style="color:#66d9ef">)</span> --data-urlencode <span style="color:#e6db74">&#34;</span><span style="color:#e6db74">q=</span>$1<span style="color:#e6db74">&#34;</span>
+    <span style="color:#66d9ef">else</span>
+      echo <span style="color:#e6db74">&#34;Usage&#34;</span>
+      echo <span style="color:#e6db74">&#34;explain                  interactive mode.&#34;</span>
+      echo <span style="color:#e6db74">&#34;explain &#39;cmd -o | ...&#39;   one quoted command to explain it.&#34;</span>
+    <span style="color:#66d9ef">fi</span>
+<span style="color:#f92672">}</span>
+
+manflags<span style="color:#f92672">(</span><span style="color:#f92672">)</span> <span style="color:#f92672">{</span>
+    man <span style="color:#e6db74">&#34;</span>$1<span style="color:#e6db74">&#34;</span> | awk <span style="color:#e6db74">&#39;{$1=$1;print}&#39;</span> | grep <span style="color:#e6db74">&#34;^\-&#34;</span>
+<span style="color:#f92672">}</span>
+
+tldrw<span style="color:#f92672">(</span><span style="color:#f92672">)</span> <span style="color:#f92672">{</span>
+   w3m -dump <span style="color:#e6db74">&#34;</span><span style="color:#e6db74">https://raw.githubusercontent.com/tldr-pages/tldr/master/pages/common/</span>$1<span style="color:#e6db74">.md</span><span style="color:#e6db74">&#34;</span>
+   w3m -dump <span style="color:#e6db74">&#34;</span><span style="color:#e6db74">https://raw.githubusercontent.com/tldr-pages/tldr/master/pages/linux/</span>$1<span style="color:#e6db74">.md</span><span style="color:#e6db74">&#34;</span>
+<span style="color:#f92672">}</span>
+
+halp<span style="color:#f92672">(</span><span style="color:#f92672">)</span> <span style="color:#f92672">{</span>
+    <span style="color:#f92672">(</span>tldr $1 ; man $1<span style="color:#f92672">)</span> | cat | less
+<span style="color:#f92672">}</span>
+
+</code></pre></div><h2 id="fuzzy-finder">Fuzzy-finder</h2>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">
+fzp<span style="color:#f92672">(</span><span style="color:#f92672">)</span> <span style="color:#f92672">{</span>
+    fzf --preview <span style="color:#e6db74">&#39;bat {}&#39;</span>
+<span style="color:#f92672">}</span>
+
+fif<span style="color:#f92672">(</span><span style="color:#f92672">)</span> <span style="color:#f92672">{</span>
+    <span style="color:#66d9ef">if</span> <span style="color:#f92672">[</span> ! <span style="color:#e6db74">&#34;</span>$#<span style="color:#e6db74">&#34;</span> -gt <span style="color:#ae81ff">0</span> <span style="color:#f92672">]</span>; <span style="color:#66d9ef">then</span> echo <span style="color:#e6db74">&#34;Need a string to search for!&#34;</span>; <span style="color:#66d9ef">return</span> 1; <span style="color:#66d9ef">fi</span>
+    local file
+    file<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;</span><span style="color:#66d9ef">$(</span>rga --max-count<span style="color:#f92672">=</span><span style="color:#ae81ff">1</span> --ignore-case --files-with-matches --no-messages <span style="color:#e6db74">&#34;</span>$@<span style="color:#e6db74">&#34;</span> | fzf-tmux +m --preview<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;rga --ignore-case --pretty --context 10 &#39;&#34;</span>$@<span style="color:#e6db74">&#34;&#39; {}&#34;</span><span style="color:#66d9ef">)</span><span style="color:#e6db74">&#34;</span> <span style="color:#f92672">&amp;&amp;</span> open <span style="color:#e6db74">&#34;</span>$file<span style="color:#e6db74">&#34;</span>
+<span style="color:#f92672">}</span>
+
+fzd<span style="color:#f92672">(</span><span style="color:#f92672">)</span> <span style="color:#f92672">{</span>
+    local dir
+    dir<span style="color:#f92672">=</span><span style="color:#66d9ef">$(</span>fd -H -t d -E yarn -E node -E node_modules | fzf --border +m<span style="color:#66d9ef">)</span>;
+    cd <span style="color:#e6db74">&#34;</span>$dir<span style="color:#e6db74">&#34;</span> <span style="color:#f92672">&amp;&amp;</span> ls
+<span style="color:#f92672">}</span>
+
+fxi<span style="color:#f92672">(</span><span style="color:#f92672">)</span> <span style="color:#f92672">{</span>
+    xbps-query -Rs <span style="color:#e6db74">&#34;&#34;</span> | cut --delimiter <span style="color:#e6db74">&#34; &#34;</span> --fields 1-2 | fzf -m --preview <span style="color:#e6db74">&#39;xbps-query -R {2}&#39;</span> | cut --delimiter <span style="color:#e6db74">&#34; &#34;</span> --fields <span style="color:#ae81ff">2</span> | xargs -ro sudo xbps-install
+<span style="color:#f92672">}</span>
+
+fxr<span style="color:#f92672">(</span><span style="color:#f92672">)</span> <span style="color:#f92672">{</span>
+    xbps-query -l | cut --delimiter <span style="color:#e6db74">&#34; &#34;</span> --fields 1-2 | fzf -m --preview <span style="color:#e6db74">&#39;xbps-query -R {2}&#39;</span> | cut --delimiter <span style="color:#e6db74">&#34; &#34;</span> --fields <span style="color:#ae81ff">2</span> | xargs -ro sudo xbps-remove
+<span style="color:#f92672">}</span>
+
+</code></pre></div><h2 id="misc-utility">Misc Utility</h2>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">
+open<span style="color:#f92672">(</span><span style="color:#f92672">)</span> <span style="color:#f92672">{</span>
+    mimeo <span style="color:#e6db74">&#34;</span>$1<span style="color:#e6db74">&#34;</span> &amp;&gt; /dev/null &amp;
+<span style="color:#f92672">}</span>
+
+
+weather<span style="color:#f92672">(</span><span style="color:#f92672">)</span> <span style="color:#f92672">{</span>
+    curl wttr.in/sheffield;
+<span style="color:#f92672">}</span>
+
+mkcd<span style="color:#f92672">(</span><span style="color:#f92672">)</span> <span style="color:#f92672">{</span>
+    mkdir -p <span style="color:#e6db74">&#34;</span>$@<span style="color:#e6db74">&#34;</span> <span style="color:#f92672">&amp;&amp;</span> cd <span style="color:#e6db74">&#34;</span>$_<span style="color:#e6db74">&#34;</span> <span style="color:#f92672">&amp;&amp;</span> ls
+<span style="color:#f92672">}</span>
+
+cl<span style="color:#f92672">(</span><span style="color:#f92672">)</span> <span style="color:#f92672">{</span>
+    last_dir<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;</span><span style="color:#66d9ef">$(</span>ls -Frt | grep <span style="color:#e6db74">&#39;/$&#39;</span> | tail -n1<span style="color:#66d9ef">)</span><span style="color:#e6db74">&#34;</span>
+    <span style="color:#66d9ef">if</span> <span style="color:#f92672">[</span> -d <span style="color:#e6db74">&#34;</span>$last_dir<span style="color:#e6db74">&#34;</span> <span style="color:#f92672">]</span>; <span style="color:#66d9ef">then</span>
+            cd <span style="color:#e6db74">&#34;</span>$last_dir<span style="color:#e6db74">&#34;</span>
+    <span style="color:#66d9ef">fi</span>
+<span style="color:#f92672">}</span>
+
+<span style="color:#75715e"># open the current path or file in GitHub</span>
+gho<span style="color:#f92672">(</span><span style="color:#f92672">)</span> <span style="color:#f92672">{</span>
+	local file<span style="color:#f92672">=</span>$1
+	local remote<span style="color:#f92672">=</span><span style="color:#e6db74">${</span>2<span style="color:#66d9ef">:-</span>origin<span style="color:#e6db74">}</span>
+
+	<span style="color:#75715e"># get the git root dir, branch, and remote URL</span>
+	local gr<span style="color:#f92672">=</span><span style="color:#66d9ef">$(</span>git rev-parse --show-toplevel<span style="color:#66d9ef">)</span>
+	local branch<span style="color:#f92672">=</span><span style="color:#66d9ef">$(</span>git rev-parse --abbrev-ref HEAD<span style="color:#66d9ef">)</span>
+	local url<span style="color:#f92672">=</span><span style="color:#66d9ef">$(</span>git config --get <span style="color:#e6db74">&#34;</span><span style="color:#e6db74">remote.</span>$remote<span style="color:#e6db74">.url</span><span style="color:#e6db74">&#34;</span><span style="color:#66d9ef">)</span>
+
+	<span style="color:#f92672">[</span><span style="color:#f92672">[</span> -n $gr <span style="color:#f92672">&amp;&amp;</span> -n $branch <span style="color:#f92672">&amp;&amp;</span> -n $remote <span style="color:#f92672">]</span><span style="color:#f92672">]</span> <span style="color:#f92672">||</span> <span style="color:#66d9ef">return</span> <span style="color:#ae81ff">1</span>
+
+	<span style="color:#75715e"># construct the path</span>
+	local path<span style="color:#f92672">=</span><span style="color:#e6db74">${</span>PWD/#$gr/<span style="color:#e6db74">}</span>
+	<span style="color:#f92672">[</span><span style="color:#f92672">[</span> -n $file <span style="color:#f92672">]</span><span style="color:#f92672">]</span> <span style="color:#f92672">&amp;&amp;</span> path<span style="color:#f92672">+=</span>/$file
+
+	<span style="color:#75715e"># extract the username and repo name</span>
+	local a
+	IFS<span style="color:#f92672">=</span>:/ read -a a <span style="color:#f92672">&lt;&lt;&lt;</span> <span style="color:#e6db74">&#34;</span>$url<span style="color:#e6db74">&#34;</span>
+	local len<span style="color:#f92672">=</span><span style="color:#e6db74">${#</span>a[@]<span style="color:#e6db74">}</span>
+	local user<span style="color:#f92672">=</span><span style="color:#e6db74">${</span>a[len-2]<span style="color:#e6db74">}</span>
+	local repo<span style="color:#f92672">=</span><span style="color:#e6db74">${</span>a[len-1]%.git<span style="color:#e6db74">}</span>
+
+	local url<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;</span><span style="color:#e6db74">https://github.com/</span>$user<span style="color:#e6db74">/</span>$repo<span style="color:#e6db74">/tree/</span>$branch$path<span style="color:#e6db74">&#34;</span>
+	echo <span style="color:#e6db74">&#34;</span>$url<span style="color:#e6db74">&#34;</span>
+	open <span style="color:#e6db74">&#34;</span>$url<span style="color:#e6db74">&#34;</span>
+<span style="color:#f92672">}</span>
+
+</code></pre></div></article>
+ 
+
+      <footer class="book-footer">
+        
+  <div class="flex justify-between">
+
+
+
+
+
+</div>
+
+ 
+        
+  
+ 
+      </footer>
+      
+    </div>
+
+    
+    <aside class="book-toc">
+      
+  <nav id="TableOfContents">
+  <ul>
+    <li><a href="#brain-assisters">Brain-assisters</a></li>
+    <li><a href="#fuzzy-finder">Fuzzy-finder</a></li>
+    <li><a href="#misc-utility">Misc Utility</a></li>
+  </ul>
+</nav>
+
+ 
+    </aside>
+    
+  </main>
+
+  
+</body>
+
+</html>
+
+
+
+
+
+
+
+
+
+
+
+

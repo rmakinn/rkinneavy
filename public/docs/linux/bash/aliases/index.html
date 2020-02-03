@@ -1,0 +1,483 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Aliases"><meta property="og:title" content="Aliases" />
+<meta property="og:description" content="Aliases  Below are some notable aliases. I do remember to use most of these. Sometimes.
+ # read in any changes made to the config since the terminal instance began alias shrc=&#39;source ~/.bashrc&#39; # run the last command as root alias pls=&#39;sudo !! &#39; # append the last run command to a notes file in the $cwd alias n=&#34;history | tail -2 | head -1 | tr -s &#39; &#39; | cut -d&#39; &#39; -f3- | awk &#39;{print \&#34;# \&#34;\$0}&#39; &gt;&gt; notes&#34; # not mine - I wish!" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="http://www.rkinneavy.com/docs/linux/bash/aliases/" />
+
+<title>Aliases | Rowan&#39;s Place</title>
+<link rel="icon" href="/favicon.png" type="image/x-icon">
+
+
+<link rel="stylesheet" href="/book.min.0ebcddff02b1e1747a812a92c33b5507c33543549bf844f2bc67cae12d2e5456.css" integrity="sha256-Drzd/wKx4XR6gSqSwztVB8M1Q1Sb&#43;ETyvGfK4S0uVFY=">
+
+
+<!--
+Made with Book Theme
+https://github.com/alex-shpak/hugo-book
+-->
+
+  
+</head>
+
+<body>
+  <input type="checkbox" class="hidden" id="menu-control" />
+  <main class="container flex">
+    <aside class="book-menu">
+      
+  <nav>
+<h2 class="book-brand">
+  <a href="/"><span>Rowan&#39;s Place</span>
+  </a>
+</h2>
+
+
+
+
+
+
+  
+
+  
+  
+
+
+
+
+
+ 
+  
+    
+
+
+
+
+  
+  <ul>
+    
+      
+        
+
+  <li >
+    
+      
+
+  <a href="/docs/databases/" >
+      Databases
+  </a>
+
+
+    
+
+    
+
+
+
+
+  
+  <ul>
+    
+  </ul>
+  
+
+
+
+  </li>
+
+
+      
+    
+      
+        
+
+  <li >
+    
+      
+
+  <a href="/docs/linux/" >
+      Linux
+  </a>
+
+
+    
+
+    
+
+
+
+
+  
+  <ul>
+    
+      
+        
+
+  <li >
+    
+      
+
+  <a href="/docs/linux/bash/" >
+      Bash
+  </a>
+
+
+    
+
+    
+
+
+
+
+  
+  <ul>
+    
+      
+        <li>
+
+  <a href="/docs/linux/bash/aliases/"  class="active">
+      Aliases
+  </a>
+
+</li>
+      
+    
+      
+        <li>
+
+  <a href="/docs/linux/bash/shellrc/" >
+      Bashrc
+  </a>
+
+</li>
+      
+    
+      
+        <li>
+
+  <a href="/docs/linux/bash/functions/" >
+      Functions
+  </a>
+
+</li>
+      
+    
+      
+        <li>
+
+  <a href="/docs/linux/bash/scripts/" >
+      Scripts
+  </a>
+
+</li>
+      
+    
+  </ul>
+  
+
+
+
+  </li>
+
+
+      
+    
+      
+        
+
+  <li >
+    
+      
+
+  <a href="/docs/linux/setup/" >
+      Setup
+  </a>
+
+
+    
+
+    
+
+
+
+
+  
+  <ul>
+    
+      
+        <li>
+
+  <a href="/docs/linux/setup/home/" >
+      Home
+  </a>
+
+</li>
+      
+    
+      
+        <li>
+
+  <a href="/docs/linux/setup/dotfiles/" >
+      Dotfiles
+  </a>
+
+</li>
+      
+    
+  </ul>
+  
+
+
+
+  </li>
+
+
+      
+    
+  </ul>
+  
+
+
+
+  </li>
+
+
+      
+    
+      
+        
+
+  <li >
+    
+      <span>Cubing</span>
+    
+
+    
+
+
+
+
+  
+  <ul>
+    
+      
+        <li>
+
+  <a href="/docs/cubing/practice/" >
+      Practice
+  </a>
+
+</li>
+      
+    
+  </ul>
+  
+
+
+
+  </li>
+
+
+      
+    
+      
+        
+
+  <li >
+    
+      
+
+  <a href="/docs/cheatsheets/" >
+      Quickref
+  </a>
+
+
+    
+
+    
+
+
+
+
+  
+  <ul>
+    
+  </ul>
+  
+
+
+
+  </li>
+
+
+      
+    
+  </ul>
+  
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+</nav>
+
+
+<script>
+(function() {
+  var menu = document.querySelector("aside.book-menu nav");
+  addEventListener("beforeunload", function(event) {
+    localStorage.setItem("menu.scrollTop", menu.scrollTop);
+  });
+  menu.scrollTop = localStorage.getItem("menu.scrollTop");
+})();
+</script>
+
+ 
+    </aside>
+
+    <div class="book-page">
+      <header class="book-header">
+        
+  <div class="flex align-center justify-between">
+  <label for="menu-control">
+    <img src="/svg/menu.svg" class="book-icon" alt="Menu" />
+  </label>
+
+  <strong>Aliases</strong>
+
+  <label for="toc-control">
+    <img src="/svg/toc.svg" class="book-icon" alt="Table of Contents" />
+  </label>
+</div>
+
+
+  
+    <input type="checkbox" class="hidden" id="toc-control" />
+    <aside class="hidden clearfix">
+      
+  <nav id="TableOfContents"></nav>
+
+
+    </aside>
+  
+ 
+      </header>
+
+      
+<article class="markdown"><h1 id="aliases">Aliases</h1>
+<blockquote>
+<p>Below are some notable aliases. I do remember to use most of these. Sometimes.</p>
+</blockquote>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">
+<span style="color:#75715e"># read in any changes made to the config since the terminal instance began</span>
+alias shrc<span style="color:#f92672">=</span><span style="color:#e6db74">&#39;source ~/.bashrc&#39;</span>
+
+<span style="color:#75715e"># run the last command as root</span>
+alias pls<span style="color:#f92672">=</span><span style="color:#e6db74">&#39;sudo !! &#39;</span>
+
+<span style="color:#75715e"># append the last run command to a notes file in the $cwd</span>
+alias n<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;history | tail -2 | head -1 | tr -s &#39; &#39; | cut -d&#39; &#39; -f3- | awk &#39;{print \&#34;# \&#34;\$0}&#39; &gt;&gt; notes&#34;</span>
+
+<span style="color:#75715e"># not mine - I wish! Imaginative, I&#39;d like to think of more like this</span>
+alias map<span style="color:#f92672">=</span><span style="color:#e6db74">&#39;xargs -n1&#39;</span>
+
+<span style="color:#75715e">## filesystem</span>
+alias ..<span style="color:#f92672">=</span><span style="color:#e6db74">&#39;cd -- ..&#39;</span>
+alias ...<span style="color:#f92672">=</span><span style="color:#e6db74">&#39;cd -- ../..&#39;</span>
+alias ....<span style="color:#f92672">=</span><span style="color:#e6db74">&#39;cd -- ../../..&#39;</span>
+
+alias mkd<span style="color:#f92672">=</span><span style="color:#e6db74">&#39;mkdir&#39;</span> <span style="color:#75715e"># save 2 keystrokes</span>
+alias mkp<span style="color:#f92672">=</span><span style="color:#e6db74">&#39;mkdir -p&#39;</span> <span style="color:#75715e"># make parent dirs if needed</span>
+
+alias ls<span style="color:#f92672">=</span><span style="color:#e6db74">&#39;exa&#39;</span>
+alias sl<span style="color:#f92672">=</span><span style="color:#e6db74">&#39;exa&#39;</span> <span style="color:#75715e"># in case of oopsie</span>
+
+alias la<span style="color:#f92672">=</span><span style="color:#e6db74">&#39;exa -a&#39;</span>  <span style="color:#75715e"># all files and dirs</span>
+alias ll<span style="color:#f92672">=</span><span style="color:#e6db74">&#39;exa -al&#39;</span> <span style="color:#75715e"># all + long</span>
+alias lt<span style="color:#f92672">=</span><span style="color:#e6db74">&#39;exa -aT -L 2&#39;</span> <span style="color:#75715e"># all + tree listing</span>
+
+<span style="color:#75715e">## pkg</span>
+alias xi<span style="color:#f92672">=</span><span style="color:#e6db74">&#39;sudo xbps-install -S&#39;</span>
+alias xu<span style="color:#f92672">=</span><span style="color:#e6db74">&#39;sudo xbps-install -Syuv&#39;</span>
+alias xr<span style="color:#f92672">=</span><span style="color:#e6db74">&#39;sudo xbps-remove&#39;</span>
+alias xs<span style="color:#f92672">=</span><span style="color:#e6db74">&#39;xbps-query -Rs&#39;</span>
+alias xm<span style="color:#f92672">=</span><span style="color:#e6db74">&#39;sudo xbps-query -m&#39;</span>
+
+<span style="color:#75715e">## git</span>
+alias ga<span style="color:#f92672">=</span><span style="color:#e6db74">&#39;git add &#39;</span>
+alias gad<span style="color:#f92672">=</span><span style="color:#e6db74">&#39;git add .&#39;</span>
+alias gc<span style="color:#f92672">=</span><span style="color:#e6db74">&#39;git clone&#39;</span>
+alias gcm<span style="color:#f92672">=</span><span style="color:#e6db74">&#39;git commit -m &#39;</span>
+alias gpom<span style="color:#f92672">=</span><span style="color:#e6db74">&#39;git push origin master&#39;</span>
+alias gsa<span style="color:#f92672">=</span><span style="color:#e6db74">&#39;git submodule add &#39;</span>
+
+<span style="color:#75715e">## misc</span>
+alias yt<span style="color:#f92672">=</span><span style="color:#e6db74">&#39;youtube-dl --config-location ~/.config/youtube-dl/video&#39;</span>
+alias ytm<span style="color:#f92672">=</span><span style="color:#e6db74">&#39;youtube-dl --config-location ~/.config/youtube-dl/audio&#39;</span>
+alias wget<span style="color:#f92672">=</span><span style="color:#e6db74">&#39;wget --hsts-file ~/.config/wget/hsts&#39;</span> <span style="color:#75715e"># keep your $HOME tidy</span>
+
+alias today<span style="color:#f92672">=</span><span style="color:#e6db74">&#39;pdd | tee &gt;(xclip -sel clip)&#39;</span>
+alias myip<span style="color:#f92672">=</span><span style="color:#e6db74">&#39;curl icanhazip.com&#39;</span>
+alias x<span style="color:#f92672">=</span><span style="color:#e6db74">&#39;atool -x&#39;</span>
+
+</code></pre></div></article>
+ 
+
+      <footer class="book-footer">
+        
+  <div class="flex justify-between">
+
+
+
+
+
+</div>
+
+ 
+        
+  
+ 
+      </footer>
+      
+    </div>
+
+    
+    <aside class="book-toc">
+      
+  <nav id="TableOfContents"></nav>
+
+ 
+    </aside>
+    
+  </main>
+
+  
+</body>
+
+</html>
+
+
+
+
+
+
+
+
+
+
+
+

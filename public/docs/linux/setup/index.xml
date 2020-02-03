@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Rowan&#39;s Place</title>
+    <title>Setup on Rowan&#39;s Place</title>
     <link>http://www.rkinneavy.com/docs/linux/setup/</link>
-    <description>Recent content on Rowan&#39;s Place</description>
+    <description>Recent content in Setup on Rowan&#39;s Place</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-GB</language>
     
@@ -16,8 +16,17 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>http://www.rkinneavy.com/docs/linux/setup/home/</guid>
-      <description>There&#39;s no place like $HOME Below I describe my home folder layout and why I do things the way I do, maybe (or maybe not) you&#39;ll get something out of it. It&#39;s a little excessive, perhaps, but I enjoy it.
-. ├── archive # old files by creation year, maybe useful again ├── 2019 └── 2019-01-01_file.txt # ISO-8601 date format is king, fight me └── 2020 | ├── backups # I use restic (and timeshift, but not in this dir) | ├── inbox # where all my unsorted downloads begin | ├── library # actually a symlink to my Dropbox folder on a secondary HDD | # ^^ sorted downloads end up here ├── art ├── books ├── {DDS/LoC} # classification schema └── shelf # currently reading or soon-to-read ├── music ├── photos ├── scrots # aka screenshots ├── videos └── walls # aka wallpapers | ├── org # life admin: CVs, bank statements etc | ├── projects # code, websites etc | └── wiki # a bunch of interlinked markdown files, once managed by vimwiki └── diary # I&#39;ve since moved to Joplin as it&#39;s became really awesome in 2019.</description>
+      <description>There&#39;s no place like $HOME~ Below I describe my home folder layout and why I do things the way I do, perhaps you&#39;ll get something out of it. It&#39;s a little excessive, I know, but what can you do? 🤷‍♂
+ . ├── archive # old files by creation year, maybe useful again ├── 2019 └── 2019-01-01_file.txt # ISO-8601 date format is king, fight me └── 2020 | ├── backups # I use restic (and timeshift, but not in this dir) | ├── inbox # where all my unsorted downloads begin | ├── library # actually a symlink to my Dropbox folder on a secondary HDD | # ^^ sorted downloads end up here ├── art ├── books ├── {DDS/LoC} # classification schema └── shelf # currently reading or soon-to-read ├── music ├── photos ├── scrots # aka screenshots ├── videos └── walls # aka wallpapers | ├── org # life admin: CVs, bank statements etc | ├── projects # code, websites etc | └── wiki # a bunch of interlinked markdown files, once managed by vimwiki └── diary # I&#39;ve since moved to Joplin as it&#39;s became really awesome in 2019.</description>
+    </item>
+    
+    <item>
+      <title>Dotfiles</title>
+      <link>http://www.rkinneavy.com/docs/linux/setup/dotfiles/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://www.rkinneavy.com/docs/linux/setup/dotfiles/</guid>
+      <description>management  git &amp;ndash;bare repo method as detailed in atlassian tutorial and similar  although I have a clever &amp;lsquo;dots&amp;rsquo; alias   I tried yadm, stow etc but they never really clicked, needed to do it this way to grok it  I don&#39;t want to put a file in the git repo and then symlink it out. I want the file to be in the right place, and simply track it by adding it to the bare git repo.</description>
     </item>
     
   </channel>

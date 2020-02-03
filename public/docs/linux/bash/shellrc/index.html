@@ -2,22 +2,22 @@
 <html lang="en">
 
 <head>
-	<meta name="generator" content="Hugo 0.62.2" />
   <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="description" content="Home"><meta property="og:title" content="Home" />
-<meta property="og:description" content="" />
-<meta property="og:type" content="website" />
-<meta property="og:url" content="http://www.rkinneavy.com/" />
+<meta name="description" content="Bashrc"><meta property="og:title" content="Bashrc" />
+<meta property="og:description" content="~/.shell.d In my .bashrc I tell it to source configuration options from the directory structured as below:
+. ├── aliases ├── environment ├── functions ├── fzf ├── history ├── path ├── prompt └── readline General  Why not just put it all in .bashrc?
+  While it&#39;s slightly slower to source all these files, it&#39;s a bit more &lsquo;pluggable&rsquo; - it&#39;s much easier for me to manage and update individual files rather than have a 300-line behemoth of a shellrc." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="http://www.rkinneavy.com/docs/linux/bash/shellrc/" />
 
-<title>Home | Rowan&#39;s Place</title>
+<title>Bashrc | Rowan&#39;s Place</title>
 <link rel="icon" href="/favicon.png" type="image/x-icon">
 
 
 <link rel="stylesheet" href="/book.min.0ebcddff02b1e1747a812a92c33b5507c33543549bf844f2bc67cae12d2e5456.css" integrity="sha256-Drzd/wKx4XR6gSqSwztVB8M1Q1Sb&#43;ETyvGfK4S0uVFY=">
 
 
-<link rel="alternate" type="application/rss+xml" href="http://www.rkinneavy.com/index.xml" title="Rowan's Place" />
 <!--
 Made with Book Theme
 https://github.com/alex-shpak/hugo-book
@@ -150,7 +150,7 @@ https://github.com/alex-shpak/hugo-book
       
         <li>
 
-  <a href="/docs/linux/bash/shellrc/" >
+  <a href="/docs/linux/bash/shellrc/"  class="active">
       Bashrc
   </a>
 
@@ -358,7 +358,7 @@ https://github.com/alex-shpak/hugo-book
     <img src="/svg/menu.svg" class="book-icon" alt="Menu" />
   </label>
 
-  <strong>Home</strong>
+  <strong>Bashrc</strong>
 
   <label for="toc-control">
     <img src="/svg/toc.svg" class="book-icon" alt="Table of Contents" />
@@ -372,14 +372,7 @@ https://github.com/alex-shpak/hugo-book
       
   <nav id="TableOfContents">
   <ul>
-    <li><a href="#who">Who?</a></li>
-    <li><a href="#what">What?</a>
-      <ul>
-        <li><a href="#whats-here">What's here?</a></li>
-        <li><a href="#why-public">Why public?</a></li>
-      </ul>
-    </li>
-    <li><a href="#how">How?</a></li>
+    <li><a href="#general">General</a></li>
   </ul>
 </nav>
 
@@ -390,25 +383,32 @@ https://github.com/alex-shpak/hugo-book
       </header>
 
       
-<article class="markdown"><h1 id="welcome">Welcome!</h1>
-<p>&hellip; to my personal blog &amp; public knowledgebase.</p>
-<h2 id="who">Who?</h2>
-<p>I'm Rowan Kinneavy. I'm a big fan of all things programming, classical &amp; jazz guitar, solving Rubik's Cubes really fast, and plenty more.</p>
-<h2 id="what">What?</h2>
-<p>Public knowledgebases are pretty neat, I think, so I'm working on building this one out. I've thousands of notes on my computer. Though plenty of them say similar things or have duplicate ideas - hopefully some will say cool or useful things, and those are the ones <em>you'll</em> see, dear reader.</p>
-<h3 id="whats-here">What's here?</h3>
-<p>&lt;&mdash; See the sidebar</p>
-<p>In theory, it will eventually be populated with sections on all sorts of things, from documenting my Linux system, to topics in computer science, to philosophy, maths, poetry, rationality, phenomenology, nice recipes, metaphor&hellip; etc etc.</p>
-<h3 id="why-public">Why public?</h3>
-<p>The rationale is that publication of my notes serves a similar role to verbal expression, encouraging me to re-wrap things in less Rowan-specific language - clarifying and distilling the contents.</p>
-<p>It's also just quite nice to go over things and get a sense of how far you've come (and also how much you've forgotten, too).</p>
-<h2 id="how">How?</h2>
+<article class="markdown"><h1 id="shelld"><code>~/.shell.d</code></h1>
+<p>In my <code>.bashrc</code> I tell it to source configuration options from the directory structured as below:</p>
+<pre><code>.
+├── aliases
+├── environment
+├── functions
+├── fzf
+├── history
+├── path
+├── prompt
+└── readline
+
+</code></pre><h2 id="general">General</h2>
+<blockquote>
+<p>Why not just put it all in .bashrc?</p>
+</blockquote>
 <ul>
-<li>It's written in Markdown and generated via Hugo.</li>
-<li>Go check out the source on my <a href="https://github.com/rmakinn/rkinneavy">GitHub</a>.</li>
-<li>The site is hosted courtesy of Netlify.</li>
-<li>I'm using a gently modified version of the <a href="https://github.com/alex-shpak/hugo-book">book</a> theme.</li>
+<li>While it's slightly slower to source all these files, it's a bit more &lsquo;pluggable&rsquo; - it's much easier for me to manage and update individual files rather than have a 300-line behemoth of a shellrc.</li>
 </ul>
+<p>My environment and path are separate files so I can source my path in the <code>.profile</code> and <code>.bash_profile</code> cases and avoid pulling in certain env vars which are specifically useful for the interactive login case (i.e. <code>.bashrc</code>).</p>
+<p>The fzf script sources bash completions and keybindings and so on.</p>
+<p>History is literally just my shell history, I have some settings to ensure each command is stamped with unixtime, and some additional config to make sure that the history of several different simultaneous terminals is appended to the file.</p>
+<ul>
+<li>This occasionally means I'll use ctrl+r instead of &lsquo;up&rsquo; to reuse a command, and it can be inadvisable to rely on the &lsquo;include this argument from some command three commands ago&rsquo; bash/readline built-in.</li>
+</ul>
+<p>I specify inputrc config location (i.e. all the readline bindings and so on) as the readline file via a line in my <code>./environment</code> file.</p>
 </article>
  
 
@@ -435,14 +435,7 @@ https://github.com/alex-shpak/hugo-book
       
   <nav id="TableOfContents">
   <ul>
-    <li><a href="#who">Who?</a></li>
-    <li><a href="#what">What?</a>
-      <ul>
-        <li><a href="#whats-here">What's here?</a></li>
-        <li><a href="#why-public">Why public?</a></li>
-      </ul>
-    </li>
-    <li><a href="#how">How?</a></li>
+    <li><a href="#general">General</a></li>
   </ul>
 </nav>
 

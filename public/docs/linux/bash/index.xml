@@ -10,5 +10,46 @@
 	<atom:link href="http://www.rkinneavy.com/docs/linux/bash/index.xml" rel="self" type="application/rss+xml" />
     
     
+    <item>
+      <title>Aliases</title>
+      <link>http://www.rkinneavy.com/docs/linux/bash/aliases/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://www.rkinneavy.com/docs/linux/bash/aliases/</guid>
+      <description>Aliases  Below are some notable aliases. I do remember to use most of these. Sometimes.
+ # read in any changes made to the config since the terminal instance began alias shrc=&amp;#39;source ~/.bashrc&amp;#39; # run the last command as root alias pls=&amp;#39;sudo !! &amp;#39; # append the last run command to a notes file in the $cwd alias n=&amp;#34;history | tail -2 | head -1 | tr -s &amp;#39; &amp;#39; | cut -d&amp;#39; &amp;#39; -f3- | awk &amp;#39;{print \&amp;#34;# \&amp;#34;\$0}&amp;#39; &amp;gt;&amp;gt; notes&amp;#34; # not mine - I wish!</description>
+    </item>
+    
+    <item>
+      <title>Bashrc</title>
+      <link>http://www.rkinneavy.com/docs/linux/bash/shellrc/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://www.rkinneavy.com/docs/linux/bash/shellrc/</guid>
+      <description>~/.shell.d In my .bashrc I tell it to source configuration options from the directory structured as below:
+. ├── aliases ├── environment ├── functions ├── fzf ├── history ├── path ├── prompt └── readline General  Why not just put it all in .bashrc?
+  While it&#39;s slightly slower to source all these files, it&#39;s a bit more &amp;lsquo;pluggable&amp;rsquo; - it&#39;s much easier for me to manage and update individual files rather than have a 300-line behemoth of a shellrc.</description>
+    </item>
+    
+    <item>
+      <title>Functions</title>
+      <link>http://www.rkinneavy.com/docs/linux/bash/functions/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://www.rkinneavy.com/docs/linux/bash/functions/</guid>
+      <description>Bash Functions I really love bash functions. I scoured the web for awesome ones, and wrote a few of my own. Here are a few worthy of mention:
+TODO: explanatory comments
+Brain-assisters cheats() { cheat -l | sk --preview &amp;#34;cheat {1}&amp;#34; } explain () { if [ &amp;#34;$#&amp;#34; -eq 0 ]; then while read -p &amp;#34;Command: &amp;#34; cmd; do curl -Gs &amp;#34;https://www.mankier.com/api/v2/explain/?cols=&amp;#34;$(tput cols) --data-urlencode &amp;#34;q=$cmd&amp;#34; done echo &amp;#34;Bye!&amp;#34; elif [ &amp;#34;$#&amp;#34; -eq 1 ]; then curl -Gs &amp;#34;https://www.</description>
+    </item>
+    
+    <item>
+      <title>Scripts</title>
+      <link>http://www.rkinneavy.com/docs/linux/bash/scripts/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://www.rkinneavy.com/docs/linux/bash/scripts/</guid>
+      <description>Scripts TODO: insert and explain my scripts below</description>
+    </item>
+    
   </channel>
 </rss>
