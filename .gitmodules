@@ -1,3 +1,12 @@
 [submodule "themes/blank"]
 	path = themes/blank
 	url = https://github.com/vimux/blank.git
+[submodule "themes/book"]
+	path = themes/book
+	url = https://github.com/alex-shpak/hugo-book
+[submodule "themes/huge-tufte"]
+	path = themes/huge-tufte
+	url = https://github.com/shawnohare/hugo-tufte.git
+[submodule "themes/Tufte"]
+	path = themes/Tufte
+	url = https://github.com/shawnohare/hugo-tufte.git

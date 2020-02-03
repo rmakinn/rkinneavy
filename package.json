@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "dependencies": {
-    "atomic-algolia": "^0.3.17"
+    "atomic-algolia": "^0.3.17",
+    "mermaid": "^8.4.6"
   },
   "devDependencies": {},
   "scripts": {

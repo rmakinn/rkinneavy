@@ -1,0 +1,38 @@
+@font-face {
+    font-family: 'Yrsa';
+    font-style: normal;
+    font-weight: 700;
+    font-display: swap;
+    src: local('Yrsa'), local('Yrsa-Regular'),
+         url('assets/fonts/Yrsa/Yrsa-Regular.ttf') format('ttf'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+         url('assets/fonts/Yrsa/Yrsa-Regular.ttf') format('ttf'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
+@font-face {
+    font-family: 'Martel Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-display: swap;
+    src: local('Martel Sans'), local('MartelSans-Regular'),
+         url('assets/fonts/Martel_Sans/MartelSans-Regular.ttf') format('ttf'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+         url('assets/fonts/Martel_Sans/MartelSans-Regular.ttf') format('ttf'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
+
+@font-face {
+    font-family: 'Courier Prime';
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: local('Courier Prime'), local('CourierPrime-Regular'),
+         url('assets/fonts/Courier_Prime/CourierPrime-Regular.ttf') format('ttf'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+         url('assets/fonts/Courier_Prime/CourierPrime-Regular.ttf') format('ttf'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
+body {
+    font-family: 'MartelSans', sans-serif;
+  }
+  
+  code {
+    font-family: 'Courier Prime', monospace;
+  }
