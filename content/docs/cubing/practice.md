@@ -1,5 +1,7 @@
 ---
-# tags: "improve", "cube"
+tags:
+- improve
+- cube
 ---
 
 # How To Practice [v1]

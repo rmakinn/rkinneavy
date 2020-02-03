@@ -3,7 +3,11 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>http://www.rkinneavy.com/docs/bash/</loc>
+    <loc>http://www.rkinneavy.com/docs/linux/bash/</loc>
+  </url>
+  
+  <url>
+    <loc>http://www.rkinneavy.com/docs/databases/</loc>
   </url>
   
   <url>
@@ -11,7 +15,21 @@
   </url>
   
   <url>
-    <loc>http://www.rkinneavy.com/docs/without-toc/</loc>
+    <loc>http://www.rkinneavy.com/docs/cubing/</loc>
+  </url>
+  
+  <url>
+    <loc>http://www.rkinneavy.com/docs/cubing/practice/</loc>
+  </url>
+  
+  <url>
+    <loc>http://www.rkinneavy.com/docs/linux/setup/</loc>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://www.rkinneavy.com/docs/linux/setup/home/</loc>
+    <priority>0</priority>
   </url>
   
   <url>
