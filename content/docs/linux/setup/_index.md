@@ -1,5 +1,6 @@
 ---
 Title: "Setup"
+bookCollapseSection: true
 ---
 
 # Setup

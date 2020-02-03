@@ -4,4 +4,4 @@ bookFlatSection: false
 title: "Databases"
 ---
 
-## Some content
+# Databases

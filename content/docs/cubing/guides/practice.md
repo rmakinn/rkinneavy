@@ -1,15 +1,24 @@
 ---
+bookCollapseSection: true
 tags:
 - improve
 - cube
 ---
 
+Originally posted at [Speedsolving](https://www.speedsolving.com/threads/how-to-practice.27870/) on 2011-03-06
+
 # How To Practice [v1]
 
-> The following is copied over from a post I wrote back in 2011 on speedsolving.com. Since then, it's received about 60k pageviews, which I think is pretty decent for a forum which shrank a lot with the advent of Reddit! I made some small formatting and editorial changes for readability, the content is effectively intact.
-> It's cubing-centric, but I think a non-cuber can read it and get some value from it with only limited familiarity with the hobby (you don't have to know how to solve).
-> I'm quite proud of it, as I was only 19 at the time. It's not without flaws, naturally. I have a much more refined notion of practice these days. I had just read 'Bounce' by Matthew Syed, and I was totally focused on being the best - so read the part about perfectionism in that context. 
-> Indeed, I'm currently drafting v2, which I intend to be a little more general and mature: exploring motivations, health, and outlining some of the distinct trade-offs associated with choices about how one dedicates their attention and energies. 
+{{< hint info >}}
+This post has more views than anything else I've written (with my real name attached). Since 2011 it's received about 60k pageviews, which is pretty decent for speedsolving.com. I made some small formatting and editorial changes for readability, the content is intact.
+
+It's cubing-centric, but I think a non-cuber can read it and get some value from it with only limited familiarity with the hobby (you don't have to know how to solve).
+
+I'm still quite proud of it after all this time. It's not without flaws. I had just read 'Bounce' by Matthew Syed, and I was focused on being the best - so read the part about perfectionism with that in mind. I have a more mature and well-researched notion of practice these days.
+
+I'm currently drafting v2, which will have some conceptual updates. It will also be more general: exploring motivations & burnout, and outlining the distinct trade-offs associated with common practice strategies.
+{{< /hint >}}
+ 
 
 I've been wanting to make this thread for a while since it's something that plenty of people don't really seem to 'get'.
 

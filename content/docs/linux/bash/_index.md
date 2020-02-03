@@ -1,5 +1,6 @@
 ---
 title: "Bash"
+bookCollapseSection: true
 ---
 
 ## Bash

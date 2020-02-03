@@ -5,10 +5,11 @@ theme = "book"
 
 
 [params]
-BookDateFormat = '2006-01-02'
+# BookDateFormat = '2006-01-02'
 BookSearch = false
 BookComments = false
 enableGitInfo = true
+# BookMenuBundle = "/menu"
 
 
 [outputs]
