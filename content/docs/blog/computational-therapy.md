@@ -7,11 +7,16 @@ tags:
 
 # Computational Therapy
 
-> When learning, I have a tendency to try and apply abstract concepts to all sorts of different things - I have to adopt the language of the ideas and test it out in different (occasionally bizarre) realms. It seems that if I don't 'get' something at a very intuitive and general level, I set my confidence levels quite low. This is at least true for procedural memories, although I always seem to have a good capacity for episodic recall. 
-> When it come to therapy, I found myself leaning on my episodic recall to 'pass the test', as it were. I wasn't *really* understanding procedural aspects with any flexibility or applicability - which is literally the point of therapies like CBT.
-> I think this particular aspect of my cognitive profile indicates why I gravitate toward philosophy - I'm inclined to treat all ideas and concepts as scale-free[0]. The world of code is no exception:
-> Below I use an analogy from Object-Oriented programming to discuss the trade-offs of this 'generalisability' approach to understanding. Going forward, I provide an example of how this concept can be applied therapeutically, in regard to reducing the complexity of our "shoulds and oughts". I provide reasons and methods for doing so, drawing from advice intended for programmers writing programs.
-> [0] more on that particular idea will come in later posts.
+{{< hint info >}}
+When learning, I have a tendency to try to apply new abstract concepts to all sorts of different things - I have to adopt the language of the ideas and test it out in different (occasionally bizarre) realms. It seems that if I don't 'get' something at an intuitive and general level, can't talk about it in lots of different ways, I set my confidence levels quite low, discounting whatever perfectly ordinary learning I have done. This is at least true for procedural memories, although I always seem to have a good capacity for episodic recall - misc facts and figures. 
+
+When it come to therapy, I found myself leaning on my episodic recall to 'pass the test', as it were. I wasn't *really* understanding procedural aspects with any flexibility or applicability - which is literally the point of therapies like CBT. Just like learning the templates in maths or chemistry to get through exams without understanding, it was quite an unpleasant and somewhat unrewarding endeavour. 
+
+I think this particular aspect of my cognitive profile indicates why I gravitate toward abstraction, philosophy and programming - my intuition is to work with concepts in a sort-of 'scale-invariant' way. 
+
+Below I use an analogy from Object-Oriented programming to discuss the trade-offs of this 'generalisability' approach to understanding. Going forward, I provide an example of how this concept can be applied therapeutically, in regard to reducing the complexity of our "shoulds and oughts". I provide reasons and methods for doing so, drawing from advice intended for programmers writing programs.
+
+{{< /hint >}}
 
 
 What seems to be in common among almost every forum where advice can upvoted is that the absolute worst advice reaches the top, and hard-earned and plain advice sits placidly in the middle. A self-reinforcing culture of 'rationally-acquired best advice' tends to emerge. Another thing in common are the psychological traits they encourage - perfectionism, all-or-nothing thinking, and massively warped expectations which encourage imposter syndrome.

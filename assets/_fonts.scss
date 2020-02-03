@@ -1,7 +1,8 @@
 @font-face {
     font-family: 'Yrsa';
+    font-size: 18px;
     font-style: normal;
-    font-weight: 700;
+    font-weight: 400;
     font-display: swap;
     src: local('Yrsa'), local('Yrsa-Regular'),
          url('assets/fonts/Yrsa/Yrsa-Regular.ttf') format('ttf'), /* Chrome 26+, Opera 23+, Firefox 39+ */
@@ -11,7 +12,7 @@
 @font-face {
     font-family: 'Martel Sans';
     font-style: normal;
-    font-weight: 700;
+    font-weight: 400;
     font-display: swap;
     src: local('Martel Sans'), local('MartelSans-Regular'),
          url('assets/fonts/Martel_Sans/MartelSans-Regular.ttf') format('ttf'), /* Chrome 26+, Opera 23+, Firefox 39+ */
@@ -29,10 +30,45 @@
          url('assets/fonts/Courier_Prime/CourierPrime-Regular.ttf') format('ttf'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
 }
 
+@font-face {
+  font-family: 'et-book';
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local('ETBembo'), local('ETBembo-Regular'),
+       url('assets/fonts/et-book/et-book-roman-line-figures/et-book-roman-line-figures.ttf') format('ttf'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+       url('assets/fonts/et-book/et-book-roman-line-figures/et-book-roman-line-figures.ttf') format('ttf'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
+@font-face {
+  font-family: 'Istok Web';
+  font-size: 17px;
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local('Istok Web'), local('IstokWeb-Regular'),
+       url('assets/fonts/IstokWeb/IstokWeb-Regular.ttf') format('ttf'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+       url('assets/fonts/IstokWeb/IstokWeb-Regular.ttf') format('ttf'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
+@font-face {
+  font-family: 'Josefin Sans';
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local('Josefin Sans'), local('JosefinSans-Regular'),
+       url('assets/fonts/Josefin_Sans/JosefinSans-Regular.ttf') format('ttf'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+       url('assets/fonts/Josefin_Sans/JosefinSans-Regular.ttf') format('ttf'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
 body {
-    font-family: 'MartelSans', sans-serif;
+    font-family: 'Josefin Sans', serif;
+    font-size: 18px;
   }
   
   code {
     font-family: 'Courier Prime', monospace;
+    font-size: 18px;
   }

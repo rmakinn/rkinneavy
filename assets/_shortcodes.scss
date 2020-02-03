@@ -84,7 +84,7 @@
 
 // {{< button >}}
 a.book-btn {
-  display: inline-block;
+  display: inline-grid;
   color: $color-link !important;
   text-decoration: none !important;
   border: $padding-1 solid $color-link;

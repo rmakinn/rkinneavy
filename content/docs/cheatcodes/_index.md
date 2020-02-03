@@ -1,7 +1,17 @@
 ---
 Title: "Cheatcodes"
+weight: 10
 ---
 
-# Cheatcodes aka Cheatsheets aka Quick Reference
+# Cheatcodes 
 
-Cheatsheets for CLI programs or library functions or keyboard shortcuts, mostly for reminders & limited/specific to my uses.
+~~Cheatcodes~~ Cheatsheets -- mainly for personal use.
+
+{{< expand TODO >}}
+
+- i3 keys
+- index and tldr of useful unix commands
+- regex
+- SQL syntax
+
+{{< /expand >}}

@@ -1,14 +1,14 @@
 ---
-Title: "Dotfiles"
+Title: "~/.dotfiles"
 Tags:
 - stub
 - dots
 ---
 
-## management
+# Dotfile Management
 
 - git --bare repo method as detailed in atlassian tutorial and similar
-  - although I have a clever 'dots' alias
+  - I have a clever 'dots' alias
 - I tried yadm, stow etc but they never really clicked, needed to do it this way to grok it
   - I don't want to put a file in the git repo and then symlink it out. I want the file to be in the right place, and simply track it by adding it to the bare git repo.
 

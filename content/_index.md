@@ -7,9 +7,16 @@ type: docs
 
 ... to my personal blog & public knowledgebase. 
 
+{{< hint danger >}}
+This site is intended to be a constant work-in-progress, but right now it's also under construction.
+Expect unexpected changes to structure and layout (content will mostly be preserved), and temporary periods offline.
+{{< /hint >}}
+
 ## Who?
 
-I'm Rowan Kinneavy. I'm a big fan of all things programming, classical & jazz guitar, solving Rubik's Cubes really fast, and plenty more.
+I'm Rowan Kinneavy. I like all things programming, musical, cuboid, philosophoid, and more. I'm a self-taught developer.
+
+If you've arrived here by way of a link in an application of mine, or you're a recruiter, my portfolio is sort of this whole site - but you probably want to look at my [projects](./docs/projects/) here.
 
 ## What?
 

@@ -1,6 +1,13 @@
-# *There's no place like $HOME~*
+---
+weight: 10
+bookFlatSection: false
+bookCollapseSection: true
+title: "~/"
+---
 
-Below I describe my home folder layout and why I do things the way I do, perhaps you'll get something out of it. It's a little excessive, I know, but what can you do? 🤷‍♂
+# *There's no place like* `$HOME`
+
+Below I describe my home folder layout and why I do things the way I do, perhaps you'll get something out of it. It's a little excessive, I know, but I couldn't help myself. What can you do? 🤷‍♂
 
 ---
 

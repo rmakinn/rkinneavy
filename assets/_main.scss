@@ -111,7 +111,8 @@ ul.pagination {
 
 .book-menu {
   flex: 0 0 $menu-width;
-  font-size: $font-size-14;
+  font-family: 'Courier Prime', monospace;
+  font-size: $font-size-16;
 
   nav {
     width: $menu-width;
@@ -159,6 +160,8 @@ ul.pagination {
 .book-header {
   display: none;
   margin-bottom: $padding-16;
+  font-family: 'Yrsa', serif;
+  font-size: $font-size-16;
 
   label {
     line-height: 0;
