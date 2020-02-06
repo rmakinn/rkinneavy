@@ -1,58 +1,38 @@
 ---
 weight: 100
 bookFlatSection: true
-bookCollapseSection: false
-title: "Projects [WIP]"
+bookCollapseSection: true
+title: "Projects"
 ---
 
 # Projects
 
 {{< hint danger >}}
 WIP - check back soon
+
+TODO: write a shortcode for pulling in relref titles
 {{< /hint >}}
 
-{{< columns >}}
 
-## Cube Solver
-{{< button relref="./cubesolver.md" >}}Cube Solver{{< /button >}}
+### Cube Solver Implementing Human Methods
+{{< button relref="./cubesolver.md" >}}Cubesolver{{< /button >}}
 
-Content1
 
-<--->
-
-## Cube Solver
+### Explain Shell Commands In Your Terminal
 {{< button relref="./explain-shell-tui.md" >}}Explainshell TUI{{< /button >}}
 
-Content2
 
-<--->
-
-## Cube Solver
+### Using Joplin as a Content-Management System for this blog
 {{< button relref="./joplin-cms.md" >}}Joplin CMS{{< /button >}}
 
-Content3
 
-{{< /columns >}}
+### Implementing an SQLite-like DB
+{{< button relref="./cubesolver.md" >}}DIY: DB{{< /button >}}
 
-{{< columns >}}
 
-## Cube Solver
-{{< button relref="./cubesolver.md" >}}Cube Solver{{< /button >}}
+### Active Bookmarking, Passive Archiving
+{{< button relref="./webtrail.md" >}}Webtrail{{< /button >}}
 
-Content4
 
-<--->
-
-## Cube Solver
-{{< button relref="./explain-shell-tui.md" >}}Explainshell TUI{{< /button >}}
-
-Content5
-
-<--->
-
-## Cube Solver
-{{< button relref="./joplin-cms.md" >}}Joplin CMS{{< /button >}}
-
-Content6
-
-{{< /columns >}}
+### Writing Tools To Implement Spaced Repetition
+{{< button relref="./srs-tools.md" >}}SRS{{< /button >}}

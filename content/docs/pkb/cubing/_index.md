@@ -8,7 +8,7 @@ weight: 10
 If you know me you'll know I like my cubes. Below are a few links, and neat things I've done while part of the cubing community. In the sidebar you'll see some tutorials. This section (like the rest of the site) is work-in-progress.
 
 {{< hint info >}}
-Several years ago I lost a lot of written content about the solving tips, tricks and techniques I had to share. I didn't want to even think about it until recently, but I recently felt keen to get back to it. Next steps are to update some of my old articles, and hopefully post some fresh content soon.
+Several years ago a hard drive of mine died and I lost a lot of written content about solving techniques, and tips and tricks I had to share. I didn't want to even think about it until recently, but now I have the itch to try again. Next steps are to update some of my old articles, and hopefully post some fresh content soon.
 {{< /hint >}}
 
 ## Links

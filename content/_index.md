@@ -1,5 +1,5 @@
 ---
-title: Home
+Title: "Home"
 type: docs
 ---
 
@@ -8,8 +8,9 @@ type: docs
 to my personal blog & public knowledgebase. 
 
 {{< hint danger >}}
-This site **is** intended to be a constant work-in-progress, but right now it's also under construction.
-Expect unexpected changes to structure and layout (content will mostly be preserved), and temporary periods offline.
+This site is a constant work-in-progress, but right now it's also under more general construction.
+
+Expect changes to structure, layout and slugs (only bookmark the base URL for now - content will mostly be preserved), also potentially temporary periods offline.
 {{< /hint >}}
 
 ## Who?
@@ -37,13 +38,13 @@ For more, see this [big ole' list](https://github.com/RichardLitt/meta-knowledge
 
 {{< /expand >}}
 
-I have an inordinate number of notes on my computer. A ton of them are redundant, but I think some will say cool/useful/interesting things (at least to me!).
+
 
 ### What's here?
 
-<--- See the sidebar 🙃
-
-In theory, it will eventually be populated with sections on all sorts of things in my interest, from documenting my Linux system, to topics in computer science, to philosophy, maths, poetry, rationality, phenomenology, nice recipes, metaphor... etc etc.
+- The blog section covers tech articles or more exploratory pieces
+- The PKB section is a central repository of concept explanations, links to resources for various things, dev-oriented reference sheets, and miscellaneous tidbits - quotes, poetry and art etc
+- The projects section covers technical details and design discussions of software I have written (or plan to write)
 
 
 ### Why public?

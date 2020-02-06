@@ -1,11 +1,16 @@
 ---
-Title: "Cheatcodes"
+Title: "Cheatsheets"
+bookCollapseSection: true
 weight: 10
 ---
 
-# Cheatcodes 
+# Cheatsheets
 
-~~Cheatcodes~~ Cheatsheets -- mainly for personal use.
+{{< hint info >}}
+
+Mainly for personal use
+
+{{< /hint >}}
 
 {{< expand TODO >}}
 
