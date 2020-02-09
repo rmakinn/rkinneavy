@@ -9,7 +9,7 @@ Tags:
 # This site: details & designs
 
 {{< expand TODO >}}
-
+- Make fonts work properly (Google remote?)
 - Clean up and post Joplin-CMS project
 - Replace search with Algolia search
   - http://www.searchtools.com/guide/index.html
@@ -24,11 +24,12 @@ Tags:
 - Shortcodes
   - Site structure & layout
   - Reading/writing UX
+  - make links + tags + notes on links look nice
+  - make Hugo shortcode for inserting section index
+  - write a shortcode for pulling in relref titles
 - VSCode Snippets/Joplin Templates
 
 {{< /expand >}}
-
-
 
 ## Concept
 

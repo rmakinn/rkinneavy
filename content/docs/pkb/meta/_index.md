@@ -115,10 +115,10 @@ Time yourself working for 25 minute periods. Give yourself a 5 minute break betw
 
 ### Web Directories, Wikis & Cyclopedias
 
+- [Etymology Online](https://www.etymonline.com/)
 - [Curlie](https://curlie.org/)
   - One of the last surviving web directories, and surprisingly decent
   - Public and explorable ontologies of the web/web content are important, I think
-- [Wikipedia](https://en.wikipedia.org/wiki/Main_Page)
 - [Webopedia](https://www.webopedia.com/)
   - Online tech dictionary for IT professionals
 - [Investopedia](https://www.investopedia.com/)

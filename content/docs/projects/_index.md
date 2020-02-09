@@ -9,8 +9,6 @@ title: "Projects"
 
 {{< hint danger >}}
 WIP - check back soon
-
-TODO: write a shortcode for pulling in relref titles
 {{< /hint >}}
 
 

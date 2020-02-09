@@ -24,10 +24,6 @@ In contrast, *not* knowing much about how they work can be a hindrance when it c
 
 This section will be a central location of resources and notes on databases while implementing a toy DB myself.
 
-TODO: make links + tags + notes on links look nice
-
-TODO: make Hugo shortcode for inserting section index
-
 ## Big List of Resources
 
 A bit of redundancy here but they're all of high quality, mostly sourced from various lists/posts online. 

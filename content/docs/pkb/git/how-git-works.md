@@ -6,11 +6,10 @@ bookCollapseSection: true
 # So how does git work? 
 
 {{< hint info >}}
-Btw, the book [**Pro Git**](https://git-scm.com/book/en/v2) by Scott Chacon is my main reference and much here is copied over liberally. Other references:
-- [IBM Developer Tutorial](https://developer.ibm.com/technologies/web-development/tutorials/d-learn-workings-git/)
-- [Mine of Information - Git Foundations](http://moi.vonos.net/programming/git-foundations/)
-- [The Git Parable](https://tom.preston-werner.com/2009/05/19/the-git-parable.html)
+As I mentioned in the index of this section [**Pro Git**](https://git-scm.com/book/en/v2) by Scott Chacon is my main reference and much here is copied over.
 {{< /hint >}}
+
+## Sequential snapshots
 
 Each occasion you give a (folder of) file(s) to git, it uses a **sequence of snapshots** to make a new version. These versions are stored in a repository (aka repo). 
 
@@ -58,7 +57,39 @@ This particular algorithm isn't perfect - it doesn't guarantee that an input wil
 
 You could mistakenly trust a safe file for one loaded with malware. As with all InfoSec stuff of this ilk - the more you trust it, the worse it is when it breaks [2]. More on the details [here](https://security.googleblog.com/2017/02/announcing-first-sha1-collision.html) and [here](https://shattered.io/).
 
-##
+Despite these little flaws, referring to files in a way that addresses their **content** rather than by **name** is very powerful - we'll get into why soon.
+
+To summarise:
+- Git is a version-control system which uses a checksum to track and compare the content of files.
+  - The checksum isn't perfect but it's fine.
+- It stores all of the initial commit, and afterward only the differences between each commit.
+
+## Exploring a fresh .git/ repo
+
+```
+.
+├── config                      # Project-specific options.
+├── description                 # Ignore this (GitWeb).
+├── HEAD                        # Points currently checked-out branch.
+├── hooks                       # Fire off custom scripts when certain 
+│  ├── applypatch-msg.sample    #   important actions occur.
+│  ├── commit-msg.sample
+│  [... etc ...]  
+│  └── update.sample
+├── info                        # Global exclude file for ignored patterns 
+│  └── exclude                  #   you don’t want to track in a .gitignore.
+├── objects                     # Stores all the content for your database.
+│  ├── info
+│  └── pack
+└── refs                        # Stores pointers into commit objects in that 
+   ├── heads                    #   above content/data, i.e. branches, tags, 
+   └── tags                     #   remotes etc.
+(yet to be created)
+└── index                       # Where Git stores staging area information.
+```
+
+TODO: take notes from [Pro Git chapter 10.2](https://git-scm.com/book/en/v2/Git-Internals-Git-Objects) onward.
+
 
 ---
 
