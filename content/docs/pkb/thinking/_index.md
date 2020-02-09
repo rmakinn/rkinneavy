@@ -159,3 +159,17 @@ These topics begin with things which can be 'about' other things - closely follo
   - [A Brush with Violence](https://www.youtube.com/watch?v=MgrO5za0lSY) [YouTube]
 - Roderick, Rick
   - [The Self Under Siege: Philosophy in the Twentieth Century - YouTube Playlist](https://www.youtube.com/watch?v=4wetwETy4u0&list=PLA34681B9BE88F5AA)
+- [Vannevar, Bush](https://en.wikipedia.org/wiki/Vannevar_Bush)
+  - [Memex](https://en.wikipedia.org/wiki/Memex)
+  - [As We May Think](https://en.wikipedia.org/wiki/As_We_May_Think)
+
+
+## Thinking Tools
+
+- notation
+  - mathematical
+  - musical
+  - visual
+- analog
+  - paper and pen/pencil
+- digital

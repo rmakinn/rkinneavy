@@ -1,9 +1,12 @@
 ---
-Title: "Linguistics"
+Title: "Language"
+bookCollapseSection: true
 Draft: false
 ---
 
-# Linguistics
+# Language (and linguistics)
+
+
 
 ## Resources
 

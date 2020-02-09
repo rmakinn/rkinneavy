@@ -1,6 +1,5 @@
 ---
 Title: "Hugo Shortcodes"
-weight: 10
 ---
 
 # My Hugo Shortcodes

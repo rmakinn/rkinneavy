@@ -12,6 +12,7 @@ Tags:
 
 - Clean up and post Joplin-CMS project
 - Replace search with Algolia search
+  - http://www.searchtools.com/guide/index.html
 - Extract parts/ideas of current book theme and rework into my own theme
   - Implement:
     - `prefers-color-scheme` in scss

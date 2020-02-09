@@ -1,6 +1,6 @@
 ---
 bookCollapseSection: true
-weight: 10
+title: "Cubing"
 ---
 
 # Cubing
