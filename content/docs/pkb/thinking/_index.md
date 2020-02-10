@@ -162,7 +162,7 @@ These topics begin with things which can be 'about' other things - closely follo
 - [Vannevar, Bush](https://en.wikipedia.org/wiki/Vannevar_Bush)
   - [Memex](https://en.wikipedia.org/wiki/Memex)
   - [As We May Think](https://en.wikipedia.org/wiki/As_We_May_Think)
-
+- [Grof, Stanislav](https://www.wikiwand.com/en/Stanislav_Grof)
 
 ## Thinking Tools
 

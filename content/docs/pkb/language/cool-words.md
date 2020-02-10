@@ -75,3 +75,12 @@ Things apropos of mesenchymal:
 - observing yourself attending to a response to an emotion
 
 [*] and often less cognitively expensive
+
+## Metonymy
+
+> a figure of speech in which a thing or concept is referred to by the name of something closely associated with that thing or concept.
+
+Examples:
+- suit = businessperson
+- an Internet = n-gate's way of referring to Internet users
+- "lend me your ears"

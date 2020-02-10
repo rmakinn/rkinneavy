@@ -83,11 +83,13 @@ Time yourself working for 25 minute periods. Give yourself a 5 minute break betw
 [*] See [FairSearch](http://fairsearch.org/about/).
 
 - Academic:
+  - [Arxiv Sanity](http://www.arxiv-sanity.com/)
   - [Semantic Scholar](https://www.semanticscholar.org/)
     - **Semantic search**: engine maps keywords to meaningful entities (institutions, journals, persons etc) to better fit results to intent & context
   - [Microsoft Academic](https://academic.microsoft.com/home)
     - Similar to Semantic Scholar
   - [Google Scholar](https://scholar.google.com/)
+  - [Scholarpedia](http://www.scholarpedia.org/article/Main_Page)
   - [Wolfram Alpha](https://www.wolframalpha.com/)
 
 - Specific:
@@ -121,7 +123,13 @@ Time yourself working for 25 minute periods. Give yourself a 5 minute break betw
   - Public and explorable ontologies of the web/web content are important, I think
 - [Webopedia](https://www.webopedia.com/)
   - Online tech dictionary for IT professionals
+- [Zeef](https://zeef.com/)
+  - "Curated Directory for Development & Tech Resources"
 - [Investopedia](https://www.investopedia.com/)
+  - [Mycryptopedia](https://www.mycryptopedia.com/)
+  - [Priceonomics](https://priceonomics.com/)
+- [Dongerlist](http://dongerlist.com/)
+  - ¯_(⊙_ʖ⊙)_/¯
 
 ### Tips & Strategies
 

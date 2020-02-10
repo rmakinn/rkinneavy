@@ -61,3 +61,33 @@ Tags:
 {{< button ref="https://www.oilshell.org/blog/" >}}Oil Shell Blog{{< /button >}}
 
 - Very clean organisation and direct presentation of information without overwhelming density/lack of readability
+
+---
+
+## Posts TODO
+
+- Move in here from Joplin wiki:
+  - SRS/memotech
+  - Effective notes & reading
+    - Mind-mapping
+  - More Linux shit
+  - /wiki/meta section
+  - clean up/unify sciencey stuff
+  - then the bigger bits:
+    - networking
+    - systemcraft
+    - golang
+- Blogposts
+  - Mnemonic essay/SRS-based natural techniques
+  - Philosophy & Personality
+  - How To Disagree
+  - Mental Models critique
+  - VSCode as markdown editor
+  - Tilt
+  - Can videogames teach?
+  - Linux-exomind
+  - Void install walkthrough
+  - Notation and thought
+  - Summarising the best of modern self-help 
+    - in 10 minutes
+  - 

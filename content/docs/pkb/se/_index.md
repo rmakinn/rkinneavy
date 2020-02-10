@@ -1,14 +1,58 @@
 ---
-Title: "SE Resources"
+Title: "Software Engineering"
+bookCollapseSection: true
 ---
 
-# Computer Science and Software Engineering Resources
+# Computer Science and Software Engineering
+
+I have the sections of CS/SE I know most about at the top-level of the PKB along with other miscellaneous topics. This section and sub-sections are to keep the top-level a little tidier: for notes on things like algorithms & data structures, the software development lifecycle etc.
+
+Sub-sections/pages:
+- Memes
+  - YAGNI
+  - DRY etc
+- SDLC/Methodology
+  - Agile/Scrum/Lean/Kanban
+  - Programmer Competency Rating/Tracking
+  - Documentation
+  - Testing, TDD
+  - Refactoring
+- General Architecture Principles
+  - Design patterns
+  - Event-driven arch
+  - Data-driven design
+  - OO vs FP
+  - Acronyms (see [BABEL](https://arcelect.com/babel99.htm))
+    - SOLID
+    - CORBA
+    - CQRS
+- System Design
+  - Concurrency
+  - Networking
+  - OS, filesystem + DB internals
+  - Performance constraints
+  - Trade-offs
+    - performance vs scaling
+    - latency vs throughput
+    - availability vs consistency
+      - CAP theorem
+- Program Design
+  - RAII
+  - Literate Programming
+
+## Resources
 
 {{< hint info >}}
-Resources for things I'm interested in learning. Have used or are well-recommended in that particular community.
+Resources for things I'm interested in learning in CS/SE. Have used or are well-recommended in that particular community.
 {{< /hint >}}
 
-## Other Lists of Resources
+[Periodic Table of SE-know-how](https://www.sw-engineering-candies.com/blog-1/periodic-table-of-software-engineering-know-how)
+
+[Devx](http://www.devx.com/)
+
+[CodeByMath](https://www.codebymath.com/index.php/welcome/challenges)
+
+[How Browsers Work](https://www.html5rocks.com/en/tutorials/internals/howbrowserswork/)
 
 ### Papers
 
@@ -28,8 +72,6 @@ https://awesometalks.party/
 
 ### Learning
 
-
-
 #### Puzzles
 
 - freecodecamp
@@ -47,11 +89,28 @@ https://awesometalks.party/
 
 ### Languages
 
+* HtDP
+* Composingprograms.com
+* SICP
+* Foundations of Programming, Seguin
+
 #### Low-level
 
 > C, C++, Rust
 > 
 > There's been a semantic shift in the meaning of the term 'low-level' from Assembly to languages like these - see the Bare-metal section below.
+
+- The C Programming Language, K & R
+- C Programming Wikibook
+- The C++ Programming Language, Stroustrup
+
+https://sean-parent.stlab.cc/papers-and-presentations/
+
+https://www.fluentcpp.com/getthemap/
+
+https://cgdb.github.io/
+
+https://en.cppreference.com/w/c
 
 #### High-level
 
@@ -65,6 +124,7 @@ https://awesometalks.party/
 > 
 > Lambda World and Strange Loop, again, are the best channels for talks on this topic.
 
+[Recursion](https://guillaumebogard.dev/blog/what-is-recursion/)
 
 ### Paradigms
 
@@ -110,6 +170,14 @@ https://awesometalks.party/
 
 ### Operating Systems
 
+RISC-V, CAD
+
+Little Book of Semaphores
+
 ### Databases
 
 ### Algorithms & Data Structures
+
+Algorithms, Dasgupta // Algorithm Design Manual, Skiena // Intro to Algs, Cormen // Algorithms, Sedgewick // Algorithm Design, Kleinberg // Intro to Algs, Manber // Elementary Algorithms, Linbui
+
+http://carlcheo.com/compsci
