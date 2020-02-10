@@ -39,6 +39,17 @@ Application/logic adaptions for services like Redis or Memcached
 
 TODO: Research 'Back Pressure'
 
+## C4 Model of Visualising Software Architecture
+
+[Main website](https://c4model.com/)
+
+A framework for diagramming a software system, working down the ladder of abstraction. The website itself also follows that structure to an extent, which is nice. Lots of examples helpfully placing dev-familiar technical nouns. 
+
+1. Context - *higher-level* - how system fits into surrounding world
+2. Containers - *higher-level* - connects the technical building blocks (containers)
+3. Components - *lower-level* - displays the components within a block
+4. Code - *lower-level* - shows how a component is implemented
+
 ## Resources
 
 https://slikts.github.io/concurrency-glossary/

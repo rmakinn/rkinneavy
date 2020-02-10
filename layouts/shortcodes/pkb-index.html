@@ -1,0 +1,8 @@
+
+<div>
+    <ul>
+      {{ range (where .Site.RegularPages.ByTitle "Section" "pkb" ) }}
+        <li><a href="{{ .Permalink }}">{{ .Params.title | humanize | title }}</a></li>
+      {{ end }}
+    </ul>
+</div>

@@ -1,14 +1,14 @@
 ---
-Title: "Hugo Shortcodes"
+Title: "Hugo"
 ---
 
-# My Hugo Shortcodes
+# Hugo Cheatsheet
 
-For personal reference while I'm building my site - so have other things to worry about!
+Useful reference while I'm building my site.
 
----
+## Shortcodes
 
-## Buttons
+### Buttons
 
 ```tpl
 {{</* button relref="/" [class="..."] */>}}Go Home{{</* /button */>}}
@@ -20,7 +20,7 @@ For personal reference while I'm building my site - so have other things to worr
 
 ---
 
-## Columns
+### Columns
 
 ```html
 {{</* columns */>}} <!-- begin columns block -->
@@ -40,24 +40,24 @@ Lorem markdownum insigne...
 ```
 
 {{< columns >}}
-## Left Content
+### Left Content
 Lorem markdownum insigne.
 
 
 <--->
 
-## Mid Content
+### Mid Content
 Lorem markdownum insigne. 
 
 <--->
 
-## Right Content
+### Right Content
 Lorem markdownum insigne. 
 {{< /columns >}}
 
 ---
 
-## Expand
+### Expand
 
 ```tpl
 {{</* expand "Optional-label 1" "label 2" */>}}
@@ -67,13 +67,13 @@ Lorem markdownum insigne...
 ```
 
 {{< expand "Optional-label 1" "label 2" >}}
-## Markdown content
+### Markdown content
 Lorem markdownum insigne...
 {{< /expand >}}
 
 ---
 
-## Hints
+### Hints
 
 ```tpl
 {{</* hint [info|warning|danger] */>}}
@@ -100,7 +100,7 @@ Lorem markdownum insigne.
 
 ---
 
-## Maths - KaTeX
+### Maths - KaTeX
 
 ```latex
 {{</* katex [display] [class="text-center"]  */>}}
@@ -118,7 +118,7 @@ x = \begin{cases}
 \end{cases}
 {{< /katex >}}
 
-### Inline/Display
+#### Inline/Display
 
 ```
 Example: {{</* katex */>}}\pi(x){{</* /katex */>}}, rendered in the same line
@@ -146,7 +146,7 @@ Etc.
 
 ---
 
-## Charts - Mermaid
+### Charts - Mermaid
 
 ```tpl
 {{</* mermaid [class="text-center"]*/>}}
@@ -178,7 +178,7 @@ sequenceDiagram
 
 ---
 
-## Tabs
+### Tabs
 
 ```tpl
 {{</* tabs "uniqueid" */>}}

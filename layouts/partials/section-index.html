@@ -1,0 +1,11 @@
+{{ $title := “Your Section Title” }}
+{{ $section := “your_section” }}
+
+
+<div>
+    <ul>
+      {{ range (where .Site.RegularPages.ByTitle "Section" $section ) }}
+        <li><a href="{{ .Permalink }}">{{ .Params.title | humanize | title }}</a></li>
+      {{ end }}
+    </ul>
+</div>

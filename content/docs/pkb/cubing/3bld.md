@@ -4,6 +4,10 @@ bookCollapseSection: true
 draft: true
 ---
 
+# 3x3x3 BLD
+
+- Links to {{< relref "./algorithms/3bld/" >}}
+
 Goals:
 
     To accurately and consistently solve 333BLD in <1min (top 5%)

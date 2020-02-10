@@ -1,5 +1,5 @@
 ---
-title: "Misc."
+title: "Misc"
 ---
 
 # A miscellany of curious things

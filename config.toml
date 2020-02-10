@@ -11,6 +11,28 @@ BookComments = false
 enableGitInfo = true
 # BookMenuBundle = "/menu"
 
+[markup]
+# Mostly defaults below
+  defaultMarkdownHandler = "goldmark"
+  [markup.goldmark]
+    [markup.goldmark.extensions]
+      definitionList = true
+      footnote = true
+      linkify = true
+      strikethrough = true
+      table = true
+      taskList = true
+      typographer = true
+    [markup.goldmark.parser]
+      attribute = true
+      autoHeadingID = true
+      autoHeadingIDType = "github"
+    [markup.goldmark.renderer]
+      hardWraps = false
+      # unsafe = true since we'll be using 'unsafe' inline HTML
+      unsafe = true
+      xHTML = false
+
 
 [outputs]
 home = ["HTML", "RSS", "Algolia"]
