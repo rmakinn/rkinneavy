@@ -1,6 +1,6 @@
 ---
 title: "Meta"
-draft: true
+draft: false
 bookCollapseSection: true
 ---
 

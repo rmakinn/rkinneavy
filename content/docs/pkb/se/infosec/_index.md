@@ -1,6 +1,6 @@
 ---
 title: "InfoSec"
-draft: true
+draft: false
 ---
 
 # Information Security

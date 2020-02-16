@@ -1,14 +1,10 @@
 ---
 Title: "Architecture"
-draft: true
+draft: false
 bookCollapseSection: true
 ---
 
 # Architecture
-
-The title of this section is something of a bait. I will be including bits and bobs of my interest in your garden-variety, brick-and-mortar architecture, but I'm also interested in thinking about Human-Computer Interaction and User-Interface design as it's cousin. So the contents and sub-pages will be something of a mish-mash, but that's mostly with an aim to generate insights at best, without feeling too jarring at worst.
-
----
 
 Below are some stubs which will eventually be developed and split out into sub-pages.
 
